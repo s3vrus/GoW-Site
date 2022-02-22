@@ -1,42 +1,33 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import logo from '../images/logo-white.png'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+const Header = () => {
+  return(
+    <nav className="navbar">
+      <div className="nav-center">
+        <div className="nav-header">
+          <Link to="/">
+            <img src={logo} alt="God of War logo"/>
+          </Link>
+        <div className="nav-links">
+          <Link to="/" className="nav-link" activeClassName="active-link">
+            Home
+          </Link>
+          <Link to="" className="nav-link" activeClassName="active-link">
+            Characters
+          </Link>
+          <Link to="/realms" className="nav-link" activeClassName="active-link">
+            Realms
+          </Link>
+          <Link to="/enemies" className="nav-link" activeClassName="active-link">
+            Enemies
+          </Link>
+        </div>
+        </div>
+      </div>
+    </nav>
+  )
 }
 
 export default Header

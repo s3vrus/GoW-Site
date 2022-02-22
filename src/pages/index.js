@@ -1,31 +1,58 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import '../styles/styles.css'
+import Layout from '../components/layout'
+import logo from '../images/logo-large.png'
+// import turn from '../images/turn.png'
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+//BG IMAGE IMPORTS
+import { graphql, useStaticQuery } from "gatsby"
+import { getImage } from "gatsby-plugin-image"
+import { BgImage } from "gbimage-bridge"
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
-  </Layout>
-)
+const Index = () => {
+  
+  const { backgroundImage123 } = useStaticQuery (
+      graphql`
+          query {
+              backgroundImage123: file(relativePath: {eq: "main-bg.jpg"}) {
+                  childImageSharp {
+                  gatsbyImageData(
+                      width: 1980, 
+                      quality: 50, 
+                      webpOptions: {quality: 50}
+                  )
+                  }
+              }
+          }
+      `
+  )
 
-export default IndexPage
+  // Would be cool if on scroll axe comes from bg pic and hits side of the screen or something like that
+
+  const pluginImage = getImage(backgroundImage123)
+
+  return (
+    <Layout>
+      <BgImage image={pluginImage} className="index-bg">
+        <main>
+          <section id="home">
+            <div className="index-logo">
+                <img src={logo} alt="God of War logo"/>
+            </div>
+          </section>
+        </main>
+      </BgImage>
+
+      {/* <section id="sec-2">
+        <a href="#home">
+          <div className="hidden-button">
+            <img src={turn} className="turn" alt="Turn"/>
+          </div>
+        </a>
+      </section> */}
+
+    </Layout>
+  )
+}
+
+export default Index

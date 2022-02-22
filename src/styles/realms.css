@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "berserker";
+    src: url("../fonts/Berserker-Regular.woff");
+  }
+  @font-face {
+    font-family: "pt-sans";
+    src: url("../fonts/PTSans-Regular.ttf");
+  }
+
+
+
+/* --------------- */
+/* ROOT VARIABLES  */
+/* --------------- */
+
+:root
+{
+    --font-heading: "berserker", sans-serif;
+    --font-body: "pt-sans", sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+}
+
+:root
+{
+    --color-black: #2D2D2A;
+    --color-gray: #4C4C47;
+    --color-red: #990f0f;
+    --color-white: #fff;
+    --color-white-opacity: rgba(255, 255, 255, 0.9);
+    --color-red-opacity: #990f0fde;
+}
+
+/* ------------------ */
+/* END ROOT VARIABLES */
+/* ------------------ */
+
+
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: var(--color-black);
+    margin: 0px;
+}
+
+.container-center {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+p {
+  font-family: var(--font-body);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* --------------- */
+/* BG IMAGE        */
+/* --------------- */
+
+.realms-bg {
+    width: 100%;
+    min-height: 120vh;
+}
+
+
+/* --------------- */
+/* REALMS PAGE     */
+/* --------------- */
+
+.realm-page {
+    min-height: calc(90vh - (6rem + 4rem));
+    text-align: center;
+    padding-top: 3rem;
+  }
+.realm-page h1 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    color: var(--color-red);
+}
+
+.alf-section {
+    background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/alf-door.jpg);
+    /* background-size: 100%; */
+    min-height: calc(100vh - (6rem + 4rem));
+    background-size: cover;
+}
+.alf-section h1{
+    font-family: var(--font-heading);
+    font-size: 3.052rem;
+    font-weight: var(--font-weight-regular);
+    color: var(--color-white);
+}
+
+.hel-section {
+  background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/hel-door.jpg);
+  /* background-size: 100%; */
+  min-height: calc(100vh - (6rem + 4rem));
+  background-size: cover;
+}
+.hel-section h1{
+  font-family: var(--font-heading);
+  font-size: 3.052rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-white);
+}
+
+.jot-section {
+  background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/jot-door.jpg);
+  /* background-size: 100%; */
+  min-height: calc(100vh - (6rem + 4rem));
+  background-size: cover;
+}
+.jot-section h1{
+  font-family: var(--font-heading);
+  font-size: 3.052rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+.musp-section {
+  background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/musp-door.jpg);
+  /* background-size: 100%; */
+  min-height: calc(100vh - (6rem + 4rem));
+  background-size: cover;
+}
+.musp-section h1{
+  font-family: var(--font-heading);
+  font-size: 3.052rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-white);
+}
+.nifl-section {
+  background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/nifl-door.jpg);
+  /* background-size: 100%; */
+  min-height: calc(100vh - (6rem + 4rem));
+  background-size: cover;
+}
+.nifl-section h1{
+  font-family: var(--font-heading);
+  font-size: 3.052rem;
+  font-weight: var(--font-weight-regular);
+  color: var(--color-white);
+}
+
+.realms-row {
+  display: flex;
+  justify-content: center;
+}
+.realms-wrapper-right {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  margin-left: 5vw;
+  width: 50%;
+  text-align: left;
+}
+.realms-wrapper-left {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  width: 50%;
+  text-align: left;
+}
+.realms-wrapper-left img {
+  width: 100%;
+}
+.realms-wrapper-right img {
+  width: 100%;
+}
+.realms-wrapper-right h1 {
+  margin-bottom: 0px;
+}
+.realms-wrapper-right p {
+  color: #fff;
+  margin-top: 0px;
+}
+.realms-wrapper-left h1 {
+  margin-bottom: 0px;
+}
+.realms-wrapper-left p {
+  color: #fff;
+  margin-top: 0px;
+}
+
+/* --------------- */
+/* REALMS SLICE    */
+/* --------------- */
+
+::before, ::after {
+    box-sizing:border-box;
+  }
+  .card {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    text-align: center;
+    z-index: 8;
+    background-color: var(--color-white-opacity);
+    height: 35vh;
+    width: 50vw;
+    border-radius: 20px;
+    border: 2px solid var(--color-red-opacity);
+  }  
+  .card h1 {
+    font-family: var(--font-heading);
+    color: var(--color-red);
+    font-size: 2rem;
+  }
+  .card p {
+    font-family: var(--font-body);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .p1 {
+    background-color: #2D2D2A;
+    min-height:33.5vh;
+  }
+  .p2 {
+    background-color: #2D2D2A;
+    min-height:3vh;
+  }
+  .p {
+    background-color:#2D2D2A;
+    min-height:0vh;
+  }  
+  .slice {
+    --slice: linear-gradient(90deg, #e41a1a 0%, #7e0b0b 100%);
+    --background: #2D2D2A;
+    --height: 90px;
+    height: var(--height);
+    position: relative;
+    margin-bottom:-2px;
+  }
+  .slice--flipped {
+    transform: scaleX(-1);
+    bottom: 0;
+  }
+  .slice::before {
+    content:'';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: var(--background);
+    clip-path: polygon(0 calc(100% - 2px), 100% 100%, 100% 28px);
+  } 
+  .slice::after {
+    content:'';
+    background-image: var(--slice);
+    clip-path: polygon(0 100%, 100% 30px, 100% 0, 0 calc(100% - 13px));
+    display: block;
+    height: 100%;
+    position: relative;
+  }
+
+/* --------------- */
+/* REALMS PAGE END */
+/* --------------- */
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+  
+}
