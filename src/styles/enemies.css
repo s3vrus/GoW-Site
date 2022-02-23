@@ -96,6 +96,7 @@ ul {
   grid-template-columns: repeat(var(--columns), 1fr);
   margin-top: calc(8px * 4);
   min-height: 300px;
+  margin-bottom: 6rem;
 }
 
 .enemy-card {
@@ -112,7 +113,7 @@ ul {
 }
 .enemy-card img{
   background-color: var(--color-red);
-  box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3) inset;
   border-radius: 12px;
   width: 11vw;
   overflow: hidden;

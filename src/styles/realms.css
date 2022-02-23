@@ -88,8 +88,8 @@ ul {
 
 .alf-section {
     background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/alf-door.jpg);
-    /* background-size: 100%; */
-    min-height: calc(100vh - (6rem + 4rem));
+    background-position: center center;
+    background-repeat: no-repeat; 
     background-size: cover;
 }
 .alf-section h1{
@@ -101,8 +101,8 @@ ul {
 
 .hel-section {
   background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/hel-door.jpg);
-  /* background-size: 100%; */
-  min-height: calc(100vh - (6rem + 4rem));
+  background-position: center center;
+  background-repeat: no-repeat; 
   background-size: cover;
 }
 .hel-section h1{
@@ -114,8 +114,8 @@ ul {
 
 .jot-section {
   background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/jot-door.jpg);
-  /* background-size: 100%; */
-  min-height: calc(100vh - (6rem + 4rem));
+  background-position: center center;
+  background-repeat: no-repeat; 
   background-size: cover;
 }
 .jot-section h1{
@@ -127,8 +127,8 @@ ul {
 }
 .musp-section {
   background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/musp-door.jpg);
-  /* background-size: 100%; */
-  min-height: calc(100vh - (6rem + 4rem));
+  background-position: center center;
+  background-repeat: no-repeat; 
   background-size: cover;
 }
 .musp-section h1{
@@ -139,8 +139,8 @@ ul {
 }
 .nifl-section {
   background-image: linear-gradient(#2d2d2a 0%, #2d2d2a00 100%), url(../images/nifl-door.jpg);
-  /* background-size: 100%; */
-  min-height: calc(100vh - (6rem + 4rem));
+  background-position: center center;
+  background-repeat: no-repeat; 
   background-size: cover;
 }
 .nifl-section h1{
@@ -153,6 +153,7 @@ ul {
 .realms-row {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .realms-wrapper-right {
   padding-top: 25vh;
@@ -174,18 +175,18 @@ ul {
   width: 100%;
 }
 .realms-wrapper-right h1 {
-  margin-bottom: 0px;
+  margin: 0px;
 }
 .realms-wrapper-right p {
   color: #fff;
-  margin-top: 0px;
+  margin: 0px;
 }
 .realms-wrapper-left h1 {
-  margin-bottom: 0px;
+  margin: 0px;
 }
 .realms-wrapper-left p {
   color: #fff;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 /* --------------- */

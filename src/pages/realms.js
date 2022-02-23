@@ -10,7 +10,7 @@ import nifl from '../images/nifl-pic.jpg'
 
 //BG IMAGE IMPORTS
 import { graphql, useStaticQuery } from "gatsby"
-import {getImage } from "gatsby-plugin-image"
+import { getImage } from "gatsby-plugin-image"
 import { BgImage } from "gbimage-bridge"
 
 const Realms = () => {
@@ -40,8 +40,10 @@ const Realms = () => {
             <div className="slice">
                 <div className="card">
                     <h1>DISCOVER THE NINE REALMS</h1>
-                    <p>Using the world tree you are able to travel across the realms of the norse mythology. Scroll below to take a look at the realms you encounter while playing God of War
-                        We haven't been to all of the realms yet so we don't have information on some of thems.
+                    <p>Using the world tree you are able to travel across the realms of the norse mythology. Each realm brings a new environment and new enemies that Kratos
+                        and Artreus need to defeat. Scroll below to take a look at the realms you encounter while playing God of War. Each realm has its door as the background image
+                        then a picture giving you a look at the realm with some text explaining what you can expect when you travel there.
+                        We haven't been to all of the realms yet so we don't have information on some of them so you won't see those.
                     </p>
                 </div>
             </div>

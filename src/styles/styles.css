@@ -144,6 +144,7 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: linear-gradient(#750909 0%, #e41a1a 100%);;
     color: white;
   }
   .page-footer h5 {
@@ -223,6 +224,32 @@ ul {
 .index-logo img{
   width: 33vw;
 }
+
+.index-box {
+  margin: 1.5vw auto;
+  border-radius: 50px;
+  background-color: var(--color-red);
+  cursor: pointer;
+  width: fit-content;
+  padding: 1.25rem 1.5rem;
+  transition: .2s ease-in-out;
+  font-size: 2.5rem;
+  margin-top: 40vh;
+}
+
+.index-box:hover {
+  background-color: #720a0a;
+}
+.index-box a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+/* .index-box a {
+  text-decoration: none;
+  color: var(--color-white);
+  transition: .2s ease-in-out;
+  font-size: 2.5rem;
+} */
 
 /* .hidden-button{
   position: absolute;

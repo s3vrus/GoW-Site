@@ -14,7 +14,7 @@ const Header = () => {
           <Link to="/" className="nav-link" activeClassName="active-link">
             Home
           </Link>
-          <Link to="" className="nav-link" activeClassName="active-link">
+          <Link to="/characters" className="nav-link" activeClassName="active-link">
             Characters
           </Link>
           <Link to="/realms" className="nav-link" activeClassName="active-link">

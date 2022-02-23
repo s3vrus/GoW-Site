@@ -39,6 +39,11 @@ const Index = () => {
             <div className="index-logo">
                 <img src={logo} alt="God of War logo"/>
             </div>
+            <div className="index-box">
+              <a href="https://www.youtube.com/watch?v=HqQMh_tij0c" target="_blank" rel="noopener noreferrer" >
+                AVAILABLE NOW ON PC
+              </a>
+            </div>
           </section>
         </main>
       </BgImage>
