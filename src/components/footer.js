@@ -7,7 +7,7 @@ const Footer = () => {
             God of War Tribute Page
         </p>
         <p>
-            Designed and developed by svrus
+            Designed and developed by Collin Osborne
         </p>
     </footer>    
   )

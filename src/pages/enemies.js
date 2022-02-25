@@ -14,6 +14,7 @@ import trav from '../images/enemies/travellery.png'
 import troll from '../images/enemies/trolly.png'
 import wulv from '../images/enemies/Wulvery.png'
 import axe from '../images/axe-gray.png'
+// import { StaticImage } from 'gatsby-plugin-image';
 
 const Enemies = () => {
 

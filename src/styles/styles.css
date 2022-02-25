@@ -144,7 +144,8 @@ ul {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(#750909 0%, #e41a1a 100%);;
+    /* background-image: linear-gradient(var(--color-black) 0%, var(--color-red) 200%);; */
+    background-color: #171717;
     color: white;
   }
   .page-footer h5 {
@@ -233,7 +234,7 @@ ul {
   width: fit-content;
   padding: 1.25rem 1.5rem;
   transition: .2s ease-in-out;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   margin-top: 40vh;
 }
 

@@ -2,7 +2,7 @@ import * as React from "react"
 import '../styles/styles.css'
 import Layout from '../components/layout'
 import logo from '../images/logo-large.png'
-// import turn from '../images/turn.png'
+// import turn from '../images/turn.png
 
 //BG IMAGE IMPORTS
 import { graphql, useStaticQuery } from "gatsby"
